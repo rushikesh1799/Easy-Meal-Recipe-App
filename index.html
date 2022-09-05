@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css"
+        integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Meal Recipes</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="meal-wrapper">
+            <h1 id="title">Get Meals for your Ingredients</h1>
+            <blockquote>A recipe has no soul. You, as the cook, must <strong>bring soul</strong> to the recipe.
+                <cite>- Thomas Keller</cite>
+            </blockquote>
+            <div class="take-input">
+                <input type="text" id="input-area" placeholder="Enter an ingredient(egg, chicken)">
+
+                <button type="submit" id="get-recipe-btn">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <div class="meal-result">
+                <h2>Your Search Results:</h2>
+                <div class="output"></div>
+            </div>
+
+            <!-- Meal details -->
+            <div class="meal-details">
+                <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+                    <i>&times;</i>
+                </button>
+
+                <div class="meal-details-content">
+                    <!-- <h2 class="recipe-title">Meal Title here</h2>
+                    <p class="recipe-ingredient">recipe category name here</p>
+                    <div class="recipe-instructions">
+                        <h3>Instructions</h3>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium eum corrupti veritatis
+                        sapiente
+                        nemo optio commodi maxime saepe ipsam dignissimos, autem, delectus iure rem! Impedit laudantium
+                        amet
+                        fuga velit beatae.
+                    </div>
+                    <div class="recipe-image">
+                        <img src="food.jpg" alt="food Image">
+                    </div>
+                    <div class="recipe-link">
+                        <a href="#" target="_blank">Watch Video</a> -->
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+    <section class="footer">
+        <div class="social">
+            <a href="https://github.com/rushikesh1799" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/rushi1799" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/rushikesh-bunge-9b14b2155/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </section>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
