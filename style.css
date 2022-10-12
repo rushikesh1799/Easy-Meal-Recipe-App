@@ -5,11 +5,11 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
 .container {
-    
+
     min-height: 100vh;
 }
 
@@ -130,7 +130,7 @@ blockquote {
 }
 
 .errorMessage {
-    grid-template-columns: 1fr!important;
+    grid-template-columns: 1fr !important;
     color: #6e07f3;
     font-size: 1.8rem;
     font-weight: 600;
@@ -154,7 +154,7 @@ blockquote {
     border-radius: 1rem;
 
     width: 60%;
-    height: 90%;
+    height: 85%;
     overflow-y: scroll;
     display: none;
     padding: 2rem 1rem;
@@ -177,6 +177,40 @@ blockquote {
     border-radius: 50%;
     margin: 1rem auto;
     display: block;
+}
+
+.recipe-instructions {
+    opacity: 0.9;
+}
+
+.recipe-instructions {
+    display: block;
+    overflow: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.recipe-instructions::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+.recipe-instructions::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+.recipe-instructions::-webkit-scrollbar-thumb {
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.recipe-instructions::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
 }
 
 .meal-details::-webkit-scrollbar {
@@ -261,7 +295,7 @@ blockquote {
 }
 
 .footer .social a:hover {
-background-color: #25c600;
+    background-color: #25c600;
 }
 
 
@@ -292,8 +326,6 @@ background-color: #25c600;
         border: 1px solid black;
     }
 
-    
-
     .recipe-image img {
         width: 100px;
         height: 100px;
@@ -301,6 +333,85 @@ background-color: #25c600;
         margin: 1rem auto;
         display: block;
     }
+
+    .showRecipe {
+        display: block;
+    }
+
+    .meal-details {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        color: #fff;
+        background: black;
+        border-radius: 1rem;
+        width: 70%;
+        height: 80%;
+        overflow-y: scroll;
+        /* display: none; */
+        padding: 2rem 1rem;
+        border: 1px solid black;
+        border-radius: 2rem;
+        opacity: 0.8;
+    }
+
+    .recipe-close-btn {
+        /* position: absolute; */
+        right: 1rem;
+        top: 2rem;
+        font-size: 1.5rem;
+        background: #FFFFFF;
+        color: black;
+        border: none;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0.9;
+        cursor: pointer;
+    }
+
+    .recipe-title {
+        margin: 0.75rem;
+    }
+
+    .recipe-instructions {
+        display: block;
+        overflow: scroll;
+        overflow-x: hidden;
+        width: 100%;
+        height: 250px;
+        border: 1px solid black;
+    }
+    
+    .recipe-instructions::-webkit-scrollbar {
+        width: 5px;
+    }
+    
+    /* Track */
+    .recipe-instructions::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+    }
+    
+    /* Handle */
+    .recipe-instructions::-webkit-scrollbar-thumb {
+        background: #FFFFFF;
+        border-radius: 10px;
+    }
+    
+    /* Handle on hover */
+    .recipe-instructions::-webkit-scrollbar-thumb:hover {
+        background: #b30000;
+    }
+
 }
 
 @media screen and (max-width: 450px) {
@@ -329,5 +440,54 @@ background-color: #25c600;
         opacity: 1;
         font-size: medium;
     }
+
+    .showRecipe {
+        display: block;
+    }
+
+    .meal-details {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        color: #fff;
+        background: black;
+        border-radius: 1rem;
+        width: 70%;
+        height: 70%;
+        overflow-y: scroll;
+        /* display: none; */
+        padding: 2rem 1rem;
+        border: 1px solid black;
+        border-radius: 2rem;
+        opacity: 0.8;
+    }
+
+    .recipe-close-btn {
+        /* position: absolute; */
+        right: 1rem;
+        top: 2rem;
+        font-size: 1.5rem;
+        background: #FFFFFF;
+        color: black;
+        border: none;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0.9;
+        cursor: pointer;
+    }
+
+    .recipe-title {
+        margin: 0.75rem;
+    }
+
 
 }
