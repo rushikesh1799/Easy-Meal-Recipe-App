@@ -329,6 +329,28 @@ blockquote {
     .meal-item {
         margin: 0;
     }
+
+    .titles {
+        display: flex;
+        flex-direction: column;   
+    }
+
+    .title-name {
+        font-family: 'Pacifico', cursive;
+        text-decoration: none;
+        color:#7F4D3E;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    #sub-title {
+        font-size: small;
+        align-self: center;
+        font-weight: 500;
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 992px) {
