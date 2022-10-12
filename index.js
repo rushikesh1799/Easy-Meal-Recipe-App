@@ -3,12 +3,17 @@ const showMealDetailsContent = document.querySelector(".meal-details-content");
 const outputRecipes = document.querySelector(".output");
 const userInput = document.querySelector("#input-area");
 const recipeCloseButton = document.querySelector("#recipe-close-btn");
+const mealWrapper = document.querySelector(".meal-wrapper")
 
 getRecipeButton.addEventListener("click", getRecipes);
 outputRecipes.addEventListener("click", getRecipeOfMeal);
 recipeCloseButton.addEventListener("click", () => {
     showMealDetailsContent.parentElement.classList.remove("showRecipe");
 });
+
+mealWrapper.addEventListener("click", () => {
+    showMealDetailsContent.parentElement.classList.remove("showRecipe");
+})
 
 function getRecipes(e) {
     let userValue = userInput.value;

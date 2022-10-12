@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 body,
 html {
     margin: 0;
@@ -27,6 +27,23 @@ body {
     position: relative;
 }
 
+.titles {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.title-name {
+    font-family: 'Pacifico', cursive;
+    text-decoration: none;
+    color:#7F4D3E;
+}
+
+#sub-title {
+    align-self: center;
+    font-weight: 500;
+}
+
 .output {
     margin: 2rem 0;
     display: grid;
@@ -35,9 +52,9 @@ body {
     padding-bottom: 50px;
 }
 
-#title {
+/* #title {
     margin: 1.5rem auto;
-}
+} */
 
 blockquote {
     margin: 1rem auto;
@@ -73,7 +90,7 @@ blockquote {
     /* border: none; */
     border-top-right-radius: 2rem;
     border-bottom-right-radius: 2rem;
-    transition: all 0.4s linear;
+    /* transition: all 0.4s linear; */
     border-radius: 1rem;
     cursor: pointer;
 }
@@ -268,7 +285,7 @@ blockquote {
 
 .footer {
     padding: 30px 0;
-    background-color: #c3d7d2;
+    background-color: rgb(138, 186, 173);
     position: absolute;
     bottom: 0;
     width: 100%;
